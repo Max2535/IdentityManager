@@ -1,0 +1,11 @@
+﻿Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.SqlServer
+
+
+dotnet ef migrations add AddIdentityTables
+dotnet ef database update
+dotnet ef migrations add AddNameToIdentityUsersTables
+dotnet ef database update
+dotnet ef migrations add AddDateCreatedToUser
+dotnet ef database update
